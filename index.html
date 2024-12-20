@@ -1,0 +1,13 @@
+<button onclick="showIframe("https://reallyhardmath.github.io/assets/")">Test</button>
+
+  <script> 
+function showIframe(url) {
+    var iframe = document.createElement('iframe');
+    iframe.src = url;  
+    iframe.width = '600';  
+    iframe.height = '400'; 
+    iframe.frameBorder = '0'; 
+    iframe.style.display = 'block'; 
+    document.body.appendChild(iframe);  
+}
+</script>

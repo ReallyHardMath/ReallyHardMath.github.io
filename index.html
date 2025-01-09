@@ -1,13 +1,15 @@
-<button onclick="showIframe('https://reallyhardmath.github.io/assets/1v1lol')">1v1.lol</button>
+<button id="bt" onclick="showIframe('https://reallyhardmath.github.io/assets/1v1lol')">1v1.lol</button>
 
   <script> 
 function showIframe(url) {
+    var bt = document.getelementbyid('bt');
     var iframe = document.createElement('iframe');
     iframe.src = url;  
-    iframe.width = '600';  
-    iframe.height = '400'; 
+    iframe.width = '100%';  
+    iframe.height = '100%'; 
     iframe.frameBorder = '0'; 
     iframe.style.display = 'block'; 
+    bt.style.display = 'none';
     document.body.appendChild(iframe);  
 }
 </script>
